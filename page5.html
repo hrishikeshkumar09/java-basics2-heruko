@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVA BASICS</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="page2.html">Topic 2</a></li>
+                    <li><a href="page3.html">Topic 3</a></li>
+                    <li><a href="page4.html">Topic 4</a></li>
+                    <li><a href="page5.html">Topic 5</a></li>
+                </ul>
+            </nav>
+            <h1 class="page5-topic-name">A SIMPLE PROGRAM, COMPILING AND EXECUTING</h1>
+        </header>
+        <section class="content-section container">
+            <h2 class="section-header">Parameters that will be used in Java Programs</h2>
+            <p class="para-all">
+                <ul>
+                    <li class="para-all">
+                        <b><u>class</u></b> keyword is used to declare a class in java.
+                    </li><br>
+                    <li class="para-all">
+                        <b><u>public</u></b> keyword is an access modifier which represents visibility, it means it is visible to all.
+                    </li><br>
+                    <li class="para-all">
+                        <b><u>static</u></b> is a keyword, if we declare any method as static, it is known as static method. The core 
+                        advantage of static method is that there is no need to create object to invoke the static method. 
+                        The main method is executed by the JVM, so it doesn't require to create object to invoke the main 
+                        method. So it saves memory.
+                    </li><br>
+                    <li class="para-all">
+                        <b><u>void</u></b> is the return type of the method, it means it doesn't return any value.
+                    </li><br>
+                    <li class="para-all">
+                        <b><u>main</u></b> represents the starting point of the program.
+                    </li><br>
+                    <li class="para-all">
+                        <b><u>String[] args</u></b> is used for command line argument. We will learn it later.
+                    </li><br>
+                    <li class="para-all">
+                        <b><u>System.out.println()</u></b> is used print statement.
+                    </li><br>
+                </ul>
+            </p>
+            <h2 class="section-header">A Simple Java Program (Compiling and Executing)</h2>
+            <p class="para-all">
+                <u><b>PROGRAM CODE</b></u>
+                <div class="para-program">public class Simple<br>
+                {<br>  
+                public static void main(String args[])<br>
+                {<br>  
+                System.out.println("Group 3");<br>  
+                }<br>  
+                }<br><br></div>
+                <div class="para-all"><u><b>Compiling and Executing</b></u></div>
+                <ol>
+                    <li class="para-all">
+                        We save this file as Simple.java
+                    </li>
+                    <li class="para-all">
+                        To compile: javac Simple.java
+                    </li>
+                    <li class="para-all">
+                        To execute:	java Simple
+                    </li>
+                </ol>
+                <div class="para-all"><u><b>Output:</b></u></div><br>
+                <div><img src="image/javaprog.PNG" width="550px"></div><br>
+                <div class="para-all">Try the code here: <a href="https://www.onlinegdb.com/online_java_compiler" target="_blank" style="color:rgb(0, 140, 255);font-style: italic;font-family: Arial, Helvetica, sans-serif;">https://www.onlinegdb.com/online_java_compiler</a></div><br>
+            </p>
+            <h2 class="section-header">In how many ways can we write a Java Program?</h2>
+            <p class="para-all">
+                <ol>
+                    <li class="para-all">
+                        By changing sequence of the modifiers, method prototype is not changed:<br><br>
+                        <div class="para-program">static public void main(String args[])</div>
+                    </li><br>
+                    <li class="para-all">
+                        Subscript notation in java array can be used after type, before variable or after variable:<br><br>
+                        <div class="para-program">public static void main(String[] args) </div><br>
+                        <div class="para-program">public static void main(String []args) </div><br>
+                        <div class="para-program">public static void main(String args[]) </div>
+                    </li><br>
+                    <li class="para-all">
+                        You can provide var-args support to main method by passing 3 ellipses (dots):<br><br>
+                        <div class="para-program">public static void main(String... args)  </div>
+                    </li><br>
+                    <li class="para-all">
+                        Having semicolon at the end of class in java is optional:<br><br>
+                        <div class="para-program">
+                            class A<br>
+                            {<br>  
+                            static public void main(String... args){<br>  
+                            System.out.println("hello java");<br>  
+                            }<br>  
+                            };<br>  
+                        </div>
+                    </li><br><br>
+                </ol>
+            </p>
+            <h2 class="section-header">Internal Details of the "Group 3" Java Program</h2>
+            <p class="para-all">
+                <u><b>What happens at compile time?</b></u><br>
+                <br>At compile time, java file is compiled by Java Compiler (It does not interact with OS) 
+                and converts the java code into bytecode.<br><br>
+                <img src="image/javacodecompile.png"><br>
+            </p>
+            <p class="para-all">
+                <u><b>What happens at runtime?</b></u><br><br>
+                At runtime, following steps are performed:<br><br>
+                <img src="image/java-runtime-processing.png" width="230px"><br>
+                <div class="para-all">
+                    <b>Classloader:</b> is the subsystem of JVM that is used to load class files.<br>
+                    <b>Bytecode Verifier:</b> checks the code fragments for illegal code that can violate access right to objects.
+                    <br><b>Interpreter:</b> read bytecode stream then execute the instructions.
+                </div><br>
+            </p>
+            <p class="para-all">
+                <u><b>Can you save a java source file by other name than the class name?</b></u><br><br>
+                Yes, if the class is not public. It is explained in the figure given below:<br>
+                <img src="image/classjava.png"><br>
+                <u>To compile:</u> &nbsp javac First.java<br>
+                <u>To execute:</u> &nbsp java Test<br><br>
+            </p>
+            <p class="para-all">
+                <u><b>Can you have multiple classes in a java source file?</b></u><br><br>
+                Yes, like the figure given below illustrates:<br>
+                <img src="image/dclass.png"><br><br>
+            </p>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+             <h3 class="topic-name">JAVA</h3>
+             <ul class="nav footer-nav">
+                <li><a href="https://www.java.com" target="_blannk"><img src="image/javaclipart.png" width="100px"></a></li>
+            </ul>    
+            </div>
+         </footer>
+    </body>
+</html>

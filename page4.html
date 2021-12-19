@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVA BASICS</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="page2.html">Topic 2</a></li>
+                    <li><a href="page3.html">Topic 3</a></li>
+                    <li><a href="page4.html">Topic 4</a></li>
+                    <li><a href="page5.html">Topic 5</a></li>
+                </ul>
+            </nav>
+            <h1 class="topic-name topic-name-large" style="font-size: 4.4em;">OOP PRINCIPLE</h1>
+        </header>
+        <section class="content-section container">
+            <h2 class="section-header">Object Oriented Programming Principles:</h2>
+            <p class="para-all">
+                Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. 
+                It simplifies software development and maintenance by providing some concepts:<br>
+                <img src="image/java-oops.png" width="400px" style="float: right;">
+                <ol>
+                <li class="para-all">Object</li>
+                <li class="para-all">Class</li>
+                <li class="para-all">Abstraction</li>
+                <li class="para-all">Encapsulation</li>
+                <li class="para-all">Inheritance</li>
+                <li class="para-all">Polymorphism</li>
+                </ol>
+                <p class="para-all">These principles are also known as pillars of the object oriented programming paradigm.</p>
+            </p>
+            <h2 class="section-header">Object:</h2>
+            <p class="para-all">
+                Any entity that has state and behaviour is known as an object. For example: chair, pen, table,
+                keyboard, bike etc. It can be physical and logical.<br><br>
+                An Object can be defined as an instance of a class. An object contains an address and takes up some 
+                space in memory. Objects can communicate without knowing the details of each other's data or code. 
+                The only necessary thing is the type of message accepted and the type of response returned by the 
+                objects.
+                <br><br>
+                <b>Example:</b> A dog is an object because it has states like color, name, breed, etc. as well as 
+                behaviors like wagging the tail, barking, eating, etc.<br>
+            </p>
+            <h2 class="section-header">Class:</h2>
+            <p class="para-all">Collection of objects is called class. It is a logical entity. A class can also be defined as a 
+               blueprint from which you can create an individual object. Class doesn't consume any space.
+                <br><br>
+                <b>Example:</b><br>
+                <div class="para-program">class ClassName {
+                <br>
+                  // fields
+                <br>
+                  // methods<br>
+                }</div><br>
+            </p>
+            <h2 class="section-header">Abstraction:</h2>
+            <p class="para-all">Abstraction in OOPs is very easy to understand when you relate it to the real time example. For example,
+               when you drive your car you do not have to be concerned with the exact internal working of your car. What you are concerned with is interacting with your car via its interfaces like steering wheel, brake
+               pedal, accelerator pedal etc. Here the knowledge you have of your car is abstract.
+               <br><br>
+                In computer science, abstraction is the process by which data and programs are defined with a
+                representation similar in form to its meaning (semantics) while hiding away the implementation details.
+                <br>
+                <div class="para-program">public class Employee
+                <br>
+                {
+                <br>
+                private Department department;
+                <br>
+                private Address address;
+                <br>
+                private Education education;
+                <br>
+                //so on
+                <br>
+                }</div>
+            </p>
+            <center><img src="image/abstract-class-1.webp" width="500px" alt="abstraction"></center>
+            <br>
+            <h2 class="section-header">Encapsulation:</h2>
+            <p class="para-all">
+                Wrapping data and methods within classes in combination with implementation
+                hiding (through access control) is often called encapsulation in OOPs. The result is
+                a data type with characteristics and behaviors. Encapsulation essentially has both
+                i.e. Information hiding and implementation hiding.
+                <br><br>
+                &nbsp &nbsp &nbsp &nbsp Information hiding is done through using access control modifiers (public, private,
+                protected) and implementation hiding is achieved through creation of interface
+                for a class.<br><br>
+                Implementation hiding gives the designer the freedom to modify how the
+                responsibility is fulfilled by an object. This is especially valuable at points where
+                the design (or even the requirements) are likely to change.<br><br>
+            </p>
+            <h2 class="section-header">Inheritence:</h2>
+            <p class="para-all"> 
+                Inheritance is another important concept in object oriented programming. Inheritance in Java is
+                a mechanism by which one object acquires the properties and behaviors of the parent object.
+                It’s essentially creating a parent-child relationship between classes. In Java, you will use
+                inheritance mainly for code re-usability and maintainability.<br><br>
+                Keyword “extends” is used to inherit a class in java. The “extends” keyword indicates that you
+                are making a new class that derives from an existing class. In the terminology of Java, a class
+                that is inherited is called a super class. The new class is called a subclass.<br><br>
+                A subclass inherits all the non-private members (fields, methods, and nested classes) from its
+                superclass. Constructors are not members, so they are not inherited by subclasses, but the
+                constructor of the superclass can be invoked from the subclass.<br>
+                <div class="para-program">class Employee<br>
+                {<br>
+                private Department department;<br>
+                private Address address;<br>
+                private Education education;<br>
+                //So on...<br>
+                }<br>
+                class Manager extends Employee {<br>
+                private List< Employee > reportees;<br>
+                }</div><br>
+            </p>
+            <center><img src="image/typesofinheritance.png" width="650px" alt="inheritence"></center>
+            <br>
+            <h2 class="section-header">Polymorphism:</h2>
+            <p class="para-all"> Polymorphism is the ability by which, we can create functions or reference
+                variables which behaves differently in different programmatic context. Polymorphism is derived 
+                from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" means forms. 
+                So polymorphism means many forms.<br><br>
+                There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. 
+                We can perform polymorphism in java by method overloading and method overriding.<br>
+                <br>
+                <b>Example:</b>
+                <br>
+                <div class="para-program">
+                class Bike{ 
+                <br> 
+                  void run(){System.out.println("running");}
+                <br>  
+                }  
+                <br>
+                class Splendor extends Bike{
+                <br>  
+                  void run(){<br>
+                      System.out.println("running safely with 60km");<br>
+                    }
+                <br>  
+                  public static void main(String args[]){ 
+                <br> 
+                    Bike b = new Splendor();//upcasting
+                <br>  
+                    b.run();  
+                <br>
+                  }  
+                <br>
+                }</div><br>
+                <p class="para-all">In this example, we are creating two classes Bike and Splendor. Splendor class extends Bike class 
+                and overrides its run() method. We are calling the run method by the reference variable of Parent 
+                class. Since it refers to the subclass object and subclass method overrides the Parent class method, 
+                the subclass method is invoked at runtime.</p>
+                <br><br>
+            </p>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+             <h3 class="topic-name">JAVA</h3>
+             <ul class="nav footer-nav">
+                <li><a href="https://www.java.com" target="_blannk"><img src="image/javaclipart.png" width="100px"></a></li>
+            </ul>    
+            </div>
+         </footer>
+    </body>
+</html>

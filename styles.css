@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("fonts/Booter - Zero Zero.woff") format("woff"),
+         url("fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;     
+}
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav li  {
+    padding: 2%;
+    margin-right: 3%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav {
+     text-align: center;
+     font-size:  1.3em;
+     font-weight: lighter;
+     border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.main-header {
+    background-image: url("image/headerbackground.jpg");
+    background-size:  cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    background-position: center;
+}
+
+.topic-name {
+    text-align: center;
+    margin: 0;
+    font-size: 3.6em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.topic-name-large {
+    font-size: 4.8em;
+}
+
+.page5-topic-name{
+    text-align: center;
+    margin: 10px;
+    font-size: 3.1em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-weight: normal;
+    color: #333;
+    font-size: 2.1em;
+    font-family: Roboto;
+}
+
+.header-image{
+    height: 180px;
+    width: 180px;
+    float: right;
+    margin: 5px;
+}
+
+.para-all{
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.para-program{
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+}
+
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: 0.25em  0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 0.5em;
+}
+
+.footer-nav img {
+    width: 90px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    width: 25%;
+    height: 42px;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
